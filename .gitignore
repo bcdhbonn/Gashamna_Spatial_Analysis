@@ -4,9 +4,8 @@
 # Allow directories
 !*/
 
-# Explicitly track ONLY these 6 files:
+# Explicitly track ONLY these 5 files:
 !README.md
-!GAS_Anatomic.ipynb
 !GAS_Bone_Size.ipynb
 !GAS_DBSCAN.ipynb
 !GAS_Hex_Density.ipynb

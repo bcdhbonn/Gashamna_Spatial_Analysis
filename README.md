@@ -14,7 +14,6 @@ The codebase is organized into **five core Jupyter Notebooks**:
 | :--- | :--- | :--- |
 | **`GAS_Hex_Density.ipynb`** | Standardized 20 m hexagonal density grids across 6 faunal categories | $d = 20.0\text{ m}$, `gridsize=35`, 6-panel A4 Figure 4 |
 | **`GAS_DBSCAN.ipynb`** | Density-based activity zone clustering & noise filtering | $eps = 7.0\text{ m}$, $min\_samples = 15$, $k$-distance elbow |
-| **`GAS_Anatomic.ipynb`** | Skeletal element representation, Chi-Square & $Z$-score residuals | $\chi^2 = 237.81$, $p = 4.84 \times 10^{-28}$, Cramér's $V = 0.275$ |
 | **`GAS_Bone_Size.ipynb`** | Fragmentation metrics & spatial distance-size decay | Spearman $r_s = -0.138$, core vs. peripheral dispersion |
 | **`GAS_Topo.ipynb`** | Photogrammetric DEM integration, elevation & slope stability | 0.05 m DEM, $5^\circ$ slope threshold, altitudinal zonation |
 
@@ -34,7 +33,6 @@ The codebase is organized into **five core Jupyter Notebooks**:
   * **Sensitivity Matrix Sweep:** Evaluates 60 parameter combinations ($eps \in [3\text{--}15\text{ m}]$, $min\_samples \in [5\text{--}30]$), demonstrating a broad stability plateau ($n = 8\text{--}11$ clusters) between $eps = 6.0\text{ m}$ and $8.0\text{ m}$.
 * **Envelope Generation:** 3.5 m point buffering, unary union dissolve, and Douglas–Peucker simplification ($0.2\text{ m}$ tolerance) producing 9 discrete activity envelopes (Clusters 1–9).
 
-### 3. Anatomical Zoning & Chi-Square Residuals (`GAS_Anatomic.ipynb`)
 * **Chi-Square Independence Test:** $\chi^2 = 237.81, df = 45, p = 4.84 \times 10^{-28}$, Cramér's $V = 0.275$.
 * **Standardized Pearson Residuals ($Z$-Scores):** $Z = \frac{O - E}{\sqrt{E}}$.
   * **Shoreline Landing Zone (Clusters 1, 3, 4):** Crania & maxillae significantly over-represented ($Z = +2.84$ to $+4.49$), indicating primary beach flensing to extract baleen/cranial oil without hauling heavy skulls uphill.

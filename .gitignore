@@ -4,12 +4,27 @@
 # Allow directories
 !*/
 
-# Explicitly track ONLY these 5 files:
+# Explicitly track essential repository files:
+!.gitignore
 !README.md
+
+# Jupyter Notebooks:
 !GAS_Bone_Size.ipynb
 !GAS_DBSCAN.ipynb
 !GAS_Hex_Density.ipynb
 !GAS_Topo.ipynb
 
-# Ignore git subfolders if any
+# Publication Figures & Analytical Outputs:
+!Gashamna_DBSCAN_Clustering.png
+!Gashamna_Figure4_Hexbins_A4.png
+!Gashamna_Hexbin_Overview.png
+!Whale_Slope_Analysis_Fixed.pdf
+!Whale_Slope_Analysis_Fixed.png
+
+# System, cache, and checkpoints
 .git/
+.ipynb_checkpoints/
+__pycache__/
+*.tmp
+*.bak
+*.pyc
